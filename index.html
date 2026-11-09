@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>沈阳九零后网络科技有限公司 | 本地生活运营与企业数字化服务</title>
+<meta name="description" content="沈阳九零后网络科技有限公司成立于2021年，总部位于沈阳，高新技术企业、抖音来客认证服务商、巨量引擎代理，业务覆盖东北地区，提供本地生活运营、广告投放、旅行社、电商及企业协同与AI办公落地服务。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --ink:#141414;--ink2:#3d3d3d;--mute:#777;--line:#e4e0d8;--paper:#f6f3ee;--white:#fff;
+  --navy:#0f1b2d;--navy2:#17263d;--accent:#e8541e;--accent2:#f39a3b;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(246,243,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:34px;height:34px}
+.brand b{font-size:16px;letter-spacing:.04em}
+.brand small{display:block;font-size:11px;color:var(--mute);letter-spacing:.06em;line-height:1.2}
+.menu{display:flex;gap:30px;font-size:14px;color:var(--ink2)}
+.menu a:hover{color:var(--accent)}
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;padding-top:96px;padding-bottom:88px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:.18em;color:var(--accent2);margin-bottom:22px}
+.hero h1{font-size:50px;line-height:1.28;font-weight:700;letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:var(--accent2)}
+.hero p.lead{margin-top:26px;font-size:17px;color:#c9d0db;max-width:560px}
+.hero .cta{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 26px;border-radius:2px;font-size:15px;border:1px solid transparent;transition:.2s}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{background:#cf4512}
+.btn.ghost{border-color:#53627a;color:#dfe4ec}
+.btn.ghost:hover{border-color:#fff}
+.hero-mark{justify-self:end;width:min(340px,100%);aspect-ratio:1;position:relative}
+.hero-mark img{width:100%;height:100%;opacity:.95}
+.hero-mark::before{content:"";position:absolute;inset:-14%;border:1px solid rgba(255,255,255,.08);border-radius:50%}
+.hero-mark::after{content:"";position:absolute;inset:-30%;border:1px solid rgba(255,255,255,.05);border-radius:50%}
+/* stats */
+.stats{background:var(--navy2);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.stat{padding:34px 18px 32px;border-left:1px solid rgba(255,255,255,.08)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat strong{display:block;font-size:34px;font-weight:700;line-height:1.1;letter-spacing:.01em}
+.stat strong span{font-size:16px;font-weight:500;margin-left:2px;color:var(--accent2)}
+.stat p{font-size:13px;color:#9aa6b8;margin-top:8px}
+/* section */
+section{padding:104px 0}
+.sec-head{display:grid;grid-template-columns:240px 1fr;gap:40px;margin-bottom:56px}
+.sec-no{font-size:13px;letter-spacing:.2em;color:var(--accent)}
+.sec-head h2{font-size:34px;line-height:1.35;font-weight:700}
+.sec-head p{margin-top:14px;color:var(--ink2);max-width:640px}
+/* about */
+.about-grid{display:grid;grid-template-columns:240px 1fr;gap:40px}
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);border-top:2px solid var(--ink)}
+.tl{padding:20px 18px 0 0}
+.tl b{font-size:22px;display:block;margin-bottom:8px}
+.tl p{font-size:13.5px;color:var(--ink2);line-height:1.7}
+.tl.now b{color:var(--accent)}
+.about-text{font-size:16px;color:var(--ink2);margin-bottom:48px;max-width:820px}
+.about-text p+p{margin-top:14px}
+/* business */
+.biz{background:var(--white)}
+.biz-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.card{padding:36px 32px 40px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:background .2s}
+.card:hover{background:#fbfaf7}
+.card .idx{font-size:12px;color:var(--mute);letter-spacing:.16em}
+.card h3{font-size:21px;margin:14px 0 12px}
+.card p{font-size:14.5px;color:var(--ink2)}
+.card ul{list-style:none;margin-top:16px;font-size:13.5px;color:var(--mute)}
+.card li{padding-left:14px;position:relative;line-height:1.9}
+.card li::before{content:"";position:absolute;left:0;top:.85em;width:6px;height:1px;background:var(--accent)}
+.card.feature{background:var(--navy);color:#fff}
+.card.feature p{color:#c9d0db}.card.feature ul{color:#9aa6b8}.card.feature .idx{color:var(--accent2)}
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:56px}
+.case{background:var(--paper);padding:26px 24px}
+.case h4{font-size:16px}
+.case .num{font-size:26px;font-weight:700;color:var(--accent);margin:10px 0 2px}
+.case p{font-size:13px;color:var(--mute)}
+.note{font-size:12px;color:var(--mute);margin-top:14px}
+/* quals */
+.quals{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.qual{border-top:2px solid var(--ink);padding-top:22px}
+.qual h3{font-size:18px;margin-bottom:10px}
+.qual p{font-size:14px;color:var(--ink2)}
+.qual .tag{display:inline-block;font-size:12px;color:var(--accent);border:1px solid var(--accent);padding:1px 8px;margin-bottom:14px;border-radius:2px}
+/* region */
+.region{background:var(--navy);color:#fff}
+.region .sec-head h2{color:#fff}.region .sec-head p{color:#c9d0db}
+.cities{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1)}
+.city{background:var(--navy);padding:34px 30px}
+.city.base{background:var(--accent)}
+.city small{font-size:12px;letter-spacing:.16em;opacity:.75}
+.city h3{font-size:28px;margin:8px 0 10px}
+.city p{font-size:14px;opacity:.85}
+/* digital */
+.digital-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.steps{counter-reset:s;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:56px 1fr;padding:22px 0;border-bottom:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-size:14px;color:var(--accent);font-weight:700;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14px;color:var(--ink2)}
+.digital-copy p{color:var(--ink2);font-size:15.5px}
+.digital-copy p+p{margin-top:14px}
+.pill{display:inline-block;margin:22px 8px 0 0;font-size:13px;padding:6px 14px;background:var(--white);border:1px solid var(--line);border-radius:20px}
+/* contact */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.kv{border-top:1px solid var(--line)}
+.kv div{display:grid;grid-template-columns:120px 1fr;padding:18px 0;border-bottom:1px solid var(--line);font-size:15px}
+.kv dt{color:var(--mute)}
+.kv dd.pending{color:var(--mute)}
+.contact h3{font-size:24px;margin-bottom:14px}
+.contact p{color:var(--ink2)}
+footer{background:var(--navy);color:#8d99ab;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:30px;padding-bottom:30px;gap:20px;flex-wrap:wrap}
+footer .brand b{color:#fff}
+footer img{width:28px;height:28px}
+/* responsive */
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:64px}
+  .hero-mark{justify-self:start;width:150px}
+  .hero-mark::before,.hero-mark::after{display:none}
+  .hero h1{font-size:36px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat{padding:24px 0;border-left:0;border-top:1px solid rgba(255,255,255,.08)}
+  .stat:nth-child(odd){padding-right:12px}
+  .sec-head,.about-grid{grid-template-columns:1fr;gap:12px}
+  .timeline{grid-template-columns:repeat(2,1fr);row-gap:8px}
+  .biz-grid{grid-template-columns:1fr 1fr}
+  .cases{grid-template-columns:1fr 1fr}
+  .quals{grid-template-columns:1fr 1fr}
+  .cities{grid-template-columns:1fr 1fr}
+  .digital-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .menu{display:none}
+  section{padding:72px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 20px}
+  .hero h1{font-size:29px}
+  .hero p.lead{font-size:15.5px}
+  .sec-head h2{font-size:26px}
+  .biz-grid,.cases,.quals,.cities{grid-template-columns:1fr}
+  .stat strong{font-size:28px}
+  .kv div{grid-template-columns:88px 1fr;font-size:14px}
+  .brand small{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="logo.svg" alt="九零后标志"><span><b>沈阳九零后网络科技有限公司</b><small>SHENYANG JIULINGHOU NETWORK TECHNOLOGY</small></span></a>
+    <nav class="menu"><a href="#about">公司简介</a><a href="#business">业务板块</a><a href="#qualification">资质荣誉</a><a href="#region">服务区域</a><a href="#digital">企业数字化</a><a href="#contact">联系我们</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">扎根沈阳 · 服务东北 · 2021 年至今</div>
+      <h1>帮东北商家把生意<br>做得<em>更顺</em>、更省力</h1>
+      <p class="lead">沈阳九零后网络科技有限公司，对外品牌“九零后”“九零文旅”。我们从本地生活运营起步，逐步发展出广告、旅行社、电商等业务，现在也为企业提供协同办公与 AI 办公的落地服务。</p>
+      <div class="cta"><a class="btn primary" href="#business">了解业务</a><a class="btn ghost" href="#contact">合作联系</a></div>
+    </div>
+    <div class="hero-mark"><img src="logo-white.svg" alt=""></div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><strong>3000<span>+</span></strong><p>累计合作客户</p></div>
+    <div class="stat"><strong>5<span>亿+</span></strong><p>2025 年本地生活售卖额</p></div>
+    <div class="stat"><strong>1<span>亿+</span></strong><p>广告线客户年充值</p></div>
+    <div class="stat"><strong>40<span>万单</span></strong><p>电商仓配旺季单季</p></div>
+    <div class="stat"><strong>4<span>地</span></strong><p>沈阳·长春·哈尔滨·内蒙古</p></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">01 / 公司简介</div>
+      <div>
+        <h2>五年时间，一直待在客户身边</h2>
+        <p>九零后 2021 年 9 月成立于沈阳。从帮餐饮、洗浴、美业门店做抖音团购开始，客户一路延伸到连锁品牌、景区、温泉、滑雪场和度假酒店。我们习惯驻店、驻场，跟老板和一线员工一起把活干完。</p>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div></div>
+      <div>
+        <div class="about-text">
+          <p>公司目前形成本地生活、广告、旅行社、电商四条业务线，服务对象以东北地区 1000 人以下的中小企业和连锁门店为主。核心团队长期从事互联网平台运营，熟悉抖音、快手、美团等平台的规则与打法。</p>
+          <p>企业文化：共赢、专业、利他、真诚、守信。我们的目标很朴素——让商家没有难做的生意。</p>
+        </div>
+        <div class="timeline">
+          <div class="tl"><b>2021</b><p>9 月成立。为餐饮、洗浴、美业连锁做抖音团购代运营。</p></div>
+          <div class="tl"><b>2022</b><p>入驻抖音来客；单月 GMV 过千万；开展直播业务，客户拓展到连锁门店。</p></div>
+          <div class="tl"><b>2023</b><p>开展抖音外卖、即时零售；客户延伸到景区、温泉、滑雪场。</p></div>
+          <div class="tl"><b>2024</b><p>开展巨量广告代理；12 月获高新技术企业认定。</p></div>
+          <div class="tl"><b>2025</b><p>深耕餐饮与酒旅连锁；旅行社异业合作；电商自营和仓配上线。</p></div>
+          <div class="tl now"><b>2026</b><p>开展企业协同与 AI 办公落地服务。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="business" class="biz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">02 / 业务板块</div>
+      <div><h2>四条业务线，加一条新业务</h2><p>各条业务线共用同一批客户和同一支驻场团队，客户在一个地方就能把营销、投放、销售和内部管理的事情谈清楚。</p></div>
+    </div>
+    <div class="biz-grid">
+      <div class="card"><div class="idx">LOCAL SERVICES</div><h3>本地生活运营</h3><p>抖音、快手团购代运营，覆盖店铺开通、商品组品、短视频、直播和达人撮合。</p><ul><li>餐饮、休闲娱乐、美业、酒旅景区</li><li>品牌自播代运营与达人分销直播</li><li>驻店、驻场执行</li></ul></div>
+      <div class="card"><div class="idx">ADVERTISING</div><h3>广告投放</h3><p>巨量引擎代理，承接广告充值与投放运营，长期服务有投放预算的客户。</p><ul><li>巨量本地推</li><li>信息流广告</li><li>投放数据复盘与续费服务</li></ul></div>
+      <div class="card"><div class="idx">TRAVEL</div><h3>旅行社业务</h3><p>与旅行社开展异业合作，组织团购客出游，承接景区与酒店客源。</p><ul><li>旅行社异业合作</li><li>团购客组织</li></ul></div>
+      <div class="card"><div class="idx">E-COMMERCE</div><h3>电商与仓配</h3><p>电商自营与仓配服务，旺季单季发货约 40 万单。</p><ul><li>以中小卖家为主</li></ul></div>
+      <div class="card"><div class="idx">INSTANT RETAIL</div><h3>即时零售</h3><p>即时零售代理，承接商家的抖音小时达业务。</p><ul><li>抖音小时达</li></ul></div>
+      <div class="card feature"><div class="idx">NEW · DIGITAL OFFICE</div><h3>企业协同与 AI 办公落地</h3><p>提供企业协同与 AI 办公落地服务：从岗位梳理、工具开通到驻场培训，帮助企业把新工具真正用起来。</p><ul><li>按岗位规划使用方式</li><li>驻场开通与培训</li><li>上线后持续陪跑</li></ul></div>
+    </div>
+    <div class="cases">
+      <div class="case"><h4>皇家海洋乐园</h4><div class="num">2500 万+</div><p>2025 年全年核销</p></div>
+      <div class="case"><h4>海蓝星梦幻城</h4><div class="num">2000 万+</div><p>2025 年全年核销</p></div>
+      <div class="case"><h4>本溪大冰沟国家森林公园</h4><div class="num">1400 万+</div><p>2025 年全年核销</p></div>
+      <div class="case"><h4>北陵冰雪世界</h4><div class="num">1000 万+</div><p>2025–2026 冬季成交额</p></div>
+    </div>
+    <p class="note">以上为部分合作客户的平台数据，来自公司服务记录。</p>
+  </div>
+</section>
+
+<section id="qualification">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">03 / 资质荣誉</div>
+      <div><h2>平台认可，政府认定</h2><p>持续与平台方合作，按平台规则考核和服务。</p></div>
+    </div>
+    <div class="quals">
+      <div class="qual"><span class="tag">政府认定</span><h3>高新技术企业</h3><p>2024 年 12 月取得高新技术企业认定，证书编号 GR202421002102。</p></div>
+      <div class="qual"><span class="tag">平台资质</span><h3>抖音来客认证服务商</h3><p>在商家后台承接团购、直播和核销运营，团队常年驻店服务。</p></div>
+      <div class="qual"><span class="tag">平台资质</span><h3>巨量引擎代理</h3><p>承接广告充值与投放，长期服务有投放预算的客户。</p></div>
+      <div class="qual"><span class="tag">平台资质</span><h3>即时零售代理</h3><p>承接商家的抖音小时达业务。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="region" class="region">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">04 / 服务区域</div>
+      <div><h2>以沈阳为基地，服务整个东北</h2><p>团队以沈阳为基地，在长春、哈尔滨和内蒙古均有服务项目，能见面、能驻场。</p></div>
+    </div>
+    <div class="cities">
+      <div class="city base"><small>BASE</small><h3>沈阳</h3><p>总部所在地，团队与主要客户集中于此，覆盖辽宁各市。</p></div>
+      <div class="city"><small>JILIN</small><h3>长春</h3><p>本地生活与文旅项目服务。</p></div>
+      <div class="city"><small>HEILONGJIANG</small><h3>哈尔滨</h3><p>本地生活与文旅项目服务。</p></div>
+      <div class="city"><small>INNER MONGOLIA</small><h3>内蒙古</h3><p>本地生活项目服务。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="digital">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">05 / 企业数字化服务</div>
+      <div><h2>把新工具用到每个岗位上</h2><p>我们提供企业协同与 AI 办公落地服务，面向东北地区 1000 人以下的中小企业。</p></div>
+    </div>
+    <div class="digital-grid">
+      <div class="digital-copy">
+        <p>很多企业买了工具却用不起来：不知道从哪个岗位开始，员工怕麻烦，流程只在老员工脑子里。这些问题靠远程演示解决不了。</p>
+        <p>我们的做法是先到现场看岗位、听一线员工讲怎么干活，再一起定下每个岗位怎么用、先用哪几件事，然后驻场培训，上线后按月复盘。</p>
+        <span class="pill">餐饮连锁</span><span class="pill">酒店与景区</span><span class="pill">零售门店</span><span class="pill">综合服务企业</span>
+      </div>
+      <div class="steps">
+        <div class="step"><div><h4>岗位梳理</h4><p>到客户现场跟岗，理清各岗位每天的工作内容与协作关系。</p></div></div>
+        <div class="step"><div><h4>方案规划</h4><p>按岗位和规模规划协同办公与 AI 助手的使用方式。</p></div></div>
+        <div class="step"><div><h4>开通部署</h4><p>完成账号开通、组织架构与常用流程配置。</p></div></div>
+        <div class="step"><div><h4>驻场培训</h4><p>面向管理层和一线员工分批培训，留下操作手册。</p></div></div>
+        <div class="step"><div><h4>持续陪跑</h4><p>上线后定期回访复盘，按业务变化调整用法。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">06 / 联系我们</div>
+      <div><h2>欢迎来沈阳，到客户现场看看</h2></div>
+    </div>
+    <div class="contact-grid">
+      <dl class="kv">
+        <div><dt>公司名称</dt><dd>沈阳九零后网络科技有限公司</dd></div>
+        <div><dt>办公地址</dt><dd>辽宁省沈阳市浑南区上深沟村 860-6 号 F9 号楼 302（沈阳国际软件园 F 区）</dd></div>
+        <div><dt>商务电话</dt><dd class="pending">待更新</dd></div>
+        <div><dt>商务邮箱</dt><dd class="pending">待更新</dd></div>
+      </dl>
+      <div>
+        <h3>合作方向</h3>
+        <p>本地生活运营、广告投放、旅行社合作、电商仓配，以及企业协同与 AI 办公落地服务。欢迎企业客户和各地合作伙伴来访交流。</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="logo-white.svg" alt=""><b>沈阳九零后网络科技有限公司</b></div>
+    <div>统一社会信用代码 91210103MA11C5T382 · © 2021–2026 九零后</div>
+  </div>
+</footer>
+</body>
+</html>
